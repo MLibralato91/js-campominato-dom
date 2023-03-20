@@ -34,4 +34,6 @@ main{
 .squareUnsafe{
     background-color: brown;
     color: white;
+    background-image: url(../img/bomb.svg);
+    
 }
