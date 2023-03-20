@@ -1,11 +1,11 @@
 .wrapper{
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(135, 151, 146);
 }
 header,
 footer{
-    background-color: white;
+    background-color: rgb(112, 74, 74);
     height: 80px;
 }
 main{
@@ -21,7 +21,7 @@ main{
 }
 .square{
     cursor: pointer;
-    border: 1px solid black;
+    border: 3px solid rgb(58, 56, 56);
     display: flex;
     justify-content: center;
     align-items: center;
