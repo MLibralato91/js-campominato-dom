@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Campo minato</title>
 </head>
@@ -16,23 +19,35 @@
         <header class="d-flex align-content-center align-items-end">
             <div class="container d-flex justify-content-between  align-content-center align-items-end">
                 <h1><i class="fa-solid fa-bomb"></i>Campo Minato</h1>
-                <form id="levelForm" class="p-2">
-                    <div>
-                        <label for="level">Seleziona livello</label>
-                        <select name="level" id="level">
-                            <option value="easy" selected>Semplice</option>
-                            <option value="normal">Normale</option>
-                            <option value="hard">Difficile</option>
-                        </select>
-                        <button type="submit" class="btn btn-danger py-1">Play</button>
+        
+                <div class="mb-3">
+                    
+                    <div class="input-group">
+                      <span class="input-group-text rounded-2 ">Segli il livello</span>
+                      <form id="levelForm" class="row row-cols-lg-auto g-3 align-items-center">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="level">Seleziona livello</label>
+                            <select class="form-select" name="level" id="level">
+                                <option value="easy" selected>Semplice</option>
+                                <option value="normal">Normale</option>
+                                <option value="hard">Difficile</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger">Play!</button>
+                        </div>
+                    </form>
                     </div>
-                </form>
+                    
+                  </div>
+
+                
             </div>
         </header>
         <main>
             <div class="container d-flex flex-wrap justify-content-center align-items-center h-100">
                 <div id="playground">
-                    
+
                 </div>
                 <h3 id="score" class="w-100 text-center">
                     Selezione la difficoltà e premi PLAY!
@@ -49,4 +64,4 @@
     <script type="text/javascript" src="./js/utility.js"></script>
 </body>
 
-</html> 
+</html>
