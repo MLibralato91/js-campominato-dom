@@ -50,7 +50,7 @@ function drawSquare(index, numSquares) {
     square.classList.add('square');
     square.style.width = `calc(100% / ${numSquares})`;
     square.style.height = square.style.width;
-    square.innerHTML = index;
+    square.innerHTML =`<span class="opacity-0"> ${index} </span>`;
 
 
     return square;
